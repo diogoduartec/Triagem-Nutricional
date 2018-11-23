@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Triagem Nutricional</string>
+    <string name="action_settings">Configurações</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_patient">Paciente:</string>
+    <string name="tv_clinic">Clínica:</string>
+    <string name="tv_room">Leito:</string>
+    <string name="tv_diagnostic_doctot">Diagnóstico Médico:</string>
+    <string name="tv_co_morbidade">Co-morbidades:</string>
+    <string name="tv_weight_actual">Peso Atual:</string>
+    <string name="tv_weight_usual">Peso Habitual:</string>
+    <string name="tv_height">Altura:</string>
+    <string name="tv_imc">IMC:</string>
+    <string name="tv_nutriciaonal_diagnostic">Diagnóstico Nutricional:</string>
+    <string name="tv_age">Idade:</string>
+    <string name="tv_id_number">Registro:</string>
+
+    <string name="hint_patient">Nome do Paciente</string>
+    <string name="hint_doctor_diagnost">Diagnóstico do Médico</string>
+    <string name="hint_clinic">Clínica</string>
+    <string name="hint_room">Leito</string>
+    <string name="hint_comorbidades">Co-morbidades</string>
+    <string name="hint_actual_weight">Peso atual (kg)</string>
+    <string name="hint_usual_weight">Peso habitual (kg)</string>
+    <string name="hint_height">Altura (m)</string>
+    <string name="hint_age">Idade</string>
+    <string name="hint_id_patient">N° do registro</string>
+    <string name="hint_imc">IMC</string>
+    <string name="hint_diag_nutri">Diagnóstico nutricional</string>
+
+    <string name="title_activity_splash_screen">Triagem Nutricional</string>
+    <string name="label_university">UNIVERSIDADE FEDERAL DO AMAZONAS</string>
+    <string name="label_hospital">HOSPITAL UNIVERSITÁRIO GETÚLIO VARGAS</string>
+    <string name="label_clinic_department">UNIDADE DE NUTRIÇÃO CLÍNICA</string>
+    <string name="new_triage">NOVA TRIAGEM</string>
+    <string name="bt_finish_triage">FINALIZAR TRIAGEM</string>
+    <string name="bt_finish_saving">SALVANDO TRIAGEM...</string>
+
+    <string name="my_triages">EXPORTAR MINHAS TRIAGENS</string>
+    <string name="bt_about_app">SOBRE O APP</string>
+    <string name="label_about_app_title">O APLICATIVO</string>
+    <string name="label_about_nrs_2002">NRS 2002</string>
+    <string name="label_about_punctuation">CALCULO DA PONTUAÇÃO NRS</string>
+
+    <string name="description_about_app">Este aplicativo é de uso proprietário e foi desenvolvido para ser utilizado na unidade de nutrição clínica do Hospital Universitário Getúlio Vargas. O formulário presente neste aplicativo baseia-se na NRS 2002, as informações preenchidas são automaticamente exportadas para um arquivo XLS (excel) para posteriormente serem analisadas pelo nutricionista responsável.</string>
+    <string name="description_about_nrs_2002">A NRS 2002 (Nutritional Risk Screening 2002) é baseada em estudos clínicos randomizados e recomendada pelo Guideline da ESPEN (European Society for Clinical Nutrition and Metabolism) para o âmbito hospitalar.</string>
+    <string name="description_about_punctuation">A partir da triagem do risco nutricional é obtido o escore do paciente, este escore é a soma da pontuação do Estado Nutricional e Gravidade da Doença, se a idade do paciente for igual ou acima de 70 anos acrescenta-se 1 ponto a mais ao seu escore. \nO escore menor que 3 significa que paciente não apresenta risco nutricional e deve ser reavaliado semanalmente. Porém, se o paciente tiver indicação de cirurgia de grande porte, deve-se considerar terapia nutricional para evitar riscos associados. \nEscore maior ou igual a 3 significa que paciente apresenta risco nutricional e a terapia nutricional deve ser iniciada.</string>
+
+    <string name="label_part1_triage">Parte 1. TRIAGEM INICIAL</string>
+    <string name="label_part1_sex">Sexo</string>
+    <string name="label_part2_triage">Parte 2. TRIAGEM DO RISCO NUTRICIONAL</string>
+    <string name="label_part3_results">RESULTADO</string>
+    <string name="label_part2_nutritional_state">Estado Nutricional</string>
+    <string name="label_part2_disease_risk">Gravidade da Doença</string>
+
+    <string name="cb_1_label_imc">Paciente apresenta IMC &lt;20,5.</string>
+    <string name="cb_2_label_loss_weight">Houve perda de peso nos últimos 3 meses.</string>
+    <string name="cb_3_label_less_food">Houve redução na ingestão de alimentos na última semana.</string>
+    <string name="cb_4_label_uti">Paciente apresenta doença grave, está em mau estado geral ou em UTI.</string>
+
+    <string name="rd_label_triage_risk_absent">Ausente (pontuação 0)</string>
+    <string name="rd_label_triage_risk_low_level">Leve (pontuação 1)</string>
+    <string name="rd_label_triage_risk_medium_level">Moderada (pontuação 2)</string>
+    <string name="rd_label_triage_risk_high_level">Grave (pontuação 3)</string>
+
+    <string name="description_nutritional_state1_absent">Estado nutricional normal.</string>
+    <string name="description_nutritional_state2_low_level" formatted="false">Perda de peso &gt; 5% em 3 meses ou; Ingestão alimentar abaixo de 50&#8211;75% da necessidade normal na semana anterior.</string>
+    <string name="description_nutritional_state3_medium_level" formatted="false">Perda de peso &gt; 5% em 2 meses ou; IMC 18,5&#8211;20,5+ condição geral comprometida ou; Ingestão alimentar abaixo de 25&#8211;60% da necessidade normal na semana anterior.</string>
+    <string name="description_nutritional_state4_high_level" formatted="false">Perda de peso &gt; 5% em 1 mês (&gt; 15% 3 meses) ou; IMC &lt; 18,5 + condição geral comprometida ou; Ingestão alimentar abaixo de 0&#8211;25% da necessidade normal na semana anterior.</string>
+
+    <string name="description_disease_risk1_absent">Necessidades nutricionais normais.</string>
+    <string name="description_disease_risk2_low_level">Fratura de quadril; Pacientes crônicos com complicações agudas: Cirrose, doença pulmonar obstrutiva crônica (DPOC); Diabetes, câncer; hemodiálise crônica.</string>
+    <string name="description_disease_risk3_medium_level" formatted="false">Cirurgia abdominal de grande porte; Acidente vascular cerebral (AVC); Pneumonia grave; Doenças malignas hematológicas (leucemias e linfomas).</string>
+    <string name="description_disease_risk4_high_level" formatted="false">Trauma craniano; Transplante de medula óssea; Paciente em cuidados intensivos (APACHE &gt; 10)</string>
+
+    <string name="title_punctuation_0">Sem risco - Pontuação 0</string>
+    <string name="title_punctuation_1">Sem risco - Pontuação 1</string>
+    <string name="title_punctuation_2">Sem risco - Pontuação 2</string>
+
+
+    <string name="description_punctuation_0"> Não apresenta risco nutricional e deve ser reavaliado semanalmente. Se o paciente tiver indicação de cirurgia de grande porte, deve-se considerar terapia nutricional para evitar riscos.</string>
+    <string name="description_punctuation_1">A necessidade proteica está aumentada, mas o Déficit Protéico pode ser recuperado pela alimentação oral ou pelo uso de terapia nutricional oral, na maior parte dos casos. Não apresenta risco nutricional e deve ser reavaliado semanalmente. Se o paciente tiver indicação de cirurgia de grande porte, deve-se considerar terapia nutricional para evitar riscos.</string>
+    <string name="description_punctuation_2">A necessidade proteica está substancialmente aumentada e o Déficit Proteico pode ser recuperado na maior parte dos casos com terapia nutricional oral/dieta enteral. Não apresenta risco nutricional e deve ser reavaliado semanalmente. Se o paciente tiver indicação de cirurgia de grande porte, deve-se considerar terapia nutricional para evitar riscos.</string>
+    <string name="description_punctuation_3_more">A necessidade proteica está substancialmente aumentada e não pode ser recuperada somente pelo uso de terapia nutricional oral/dieta enteral.</string>
+
+</resources>

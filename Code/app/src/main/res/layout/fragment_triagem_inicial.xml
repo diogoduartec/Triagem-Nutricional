@@ -1,0 +1,376 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackgroundScreen">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/main_cards_styles">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/triage_steps_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_part1_triage" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+
+                    <CheckBox
+                        android:id="@+id/cb_1_imc"
+                        android:layout_width="match_parent"
+                        style="@style/checkbox_text_styles"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:text="@string/cb_1_label_imc" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+
+                    <CheckBox
+                        android:id="@+id/cb_2_lose_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/checkbox_text_styles"
+                        android:text="@string/cb_2_label_loss_weight" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+
+                    <CheckBox
+                        android:id="@+id/cb_3_less_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/checkbox_text_styles"
+                        android:text="@string/cb_3_label_less_food" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+
+                    <CheckBox
+                        android:id="@+id/cb_4_uti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/checkbox_text_styles"
+                        android:text="@string/cb_4_label_uti" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/main_cards_styles">
+
+                <TextView
+                    android:id="@+id/tvSexo"
+                    style="@style/triage_steps_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_part1_sex" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <RadioButton
+                            android:id="@+id/rd_sex_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Masculino"
+                            style="@style/checkbox_text_styles"/>
+
+                        <RadioButton
+                            android:id="@+id/rd_sex_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Feminino"
+                            style="@style/checkbox_text_styles"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/main_cards_styles">
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/triage_steps_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_part2_triage" />
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/triage_steps_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_part2_nutritional_state" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/radio_cards"
+                        style="@style/triage_part2_padding"
+                        android:layout_weight="1">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_state1_absent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_state1_absent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/triage_part2_padding"
+                        android:background="@drawable/radio_cards"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_state2_low"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_state2_low"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/triage_part2_padding"
+                        android:background="@drawable/radio_cards"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_state3_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_state3_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/triage_part2_padding"
+                        android:background="@drawable/radio_cards"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_state4_high"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_state4_high"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/main_cards_styles">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/triage_steps_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_part2_disease_risk" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/radio_cards"
+                        style="@style/triage_part2_padding"
+                        android:layout_weight="1">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_disease1_absent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_disease1_absent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/triage_part2_padding"
+                        android:background="@drawable/radio_cards"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_disease2_low"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_disease2_low"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/triage_part2_padding"
+                        android:background="@drawable/radio_cards"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_disease3_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_disease3_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/triage_part2_padding"
+                        android:background="@drawable/radio_cards"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rd_triage_disease4_high"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_disease4_high"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/main_cards_styles">
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/triage_steps_titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_part3_results" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    style="@style/triage_part1_padding">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/radio_cards"
+                        style="@style/triage_part2_padding"
+                        android:id="@+id/linearLayoutResult"
+                        android:layout_weight="1">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_triage_results"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

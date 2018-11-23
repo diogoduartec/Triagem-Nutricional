@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="tv_date_login">
+        <item name="android:textColor">@color/colorSolimoes</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17.33sp</item>
+    </style>
+
+    <style name="text_fields_style">
+        <item name="android:paddingBottom">@dimen/text_fields_padding_vertical</item>
+        <item name="android:paddingTop">@dimen/text_fields_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/text_fields_padding__horizontal</item>
+        <item name="android:paddingRight">@dimen/text_fields_padding__horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/text_fields_margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/text_fields_margin_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/text_fields_margin__horizontal</item>
+        <item name="android:layout_marginRight">@dimen/text_fields_margin__horizontal</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
+
+    <style name="main_cards_styles">
+        <item name="android:background">@drawable/edittext_rounded</item>
+        <item name="android:paddingBottom">@dimen/text_fields_padding_vertical</item>
+        <item name="android:paddingTop">@dimen/text_fields_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/text_fields_padding__horizontal</item>
+        <item name="android:paddingRight">@dimen/text_fields_padding__horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/text_fields_margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/text_fields_margin_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/text_fields_margin__horizontal</item>
+        <item name="android:layout_marginRight">@dimen/text_fields_margin__horizontal</item>
+    </style>
+
+    <style name="main_titles_styles">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="checkbox_text_styles">
+        <item name="android:textColor">#00796b</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="about_app_description_text_styles">
+        <item name="android:textColor">#00796b</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="triage_part1_padding">
+        <item name="android:paddingBottom">@dimen/check_boxes_padding_vertical</item>
+        <item name="android:paddingTop">@dimen/check_boxes_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/check_boxes_padding__horizontal</item>
+        <item name="android:paddingRight">@dimen/check_boxes_padding__horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/check_boxes_margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/check_boxes_margin_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/check_boxes_margin__horizontal</item>
+        <item name="android:layout_marginRight">@dimen/check_boxes_margin__horizontal</item>
+    </style>
+
+    <style name="triage_part2_padding">
+        <item name="android:paddingBottom">@dimen/radios_padding_vertical</item>
+        <item name="android:paddingTop">@dimen/radios_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/radios_padding__horizontal</item>
+        <item name="android:paddingRight">@dimen/radios_padding__horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/radios_margin_vertical</item>
+        <item name="android:layout_marginTop">@dimen/radios_margin_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/radios_margin__horizontal</item>
+        <item name="android:layout_marginRight">@dimen/radios_margin__horizontal</item>
+    </style>
+
+    <style name="triage_steps_titles">
+        <item name="android:textColor">@color/triageTitleColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tiv_text_fields">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#009688</color>
+    <color name="colorSolimoes">#a99045</color>
+
+    <color name="colorBackgroundScreen">#e8f5e9</color>
+    <color name="lightPrimaryColor">#000000</color>
+    <color name="triageTitleColor">#004d40</color>
+    <color name="transparent">#0fff</color>
+    <color name="white">#fff</color>
+    <color name="gray">#333</color>
+    <color name="gray_light">#dfdfdf</color>
+    <color name="rd_green">#b2dfdb</color>
+
+    <color name="lightRed">#ffcdd2</color>
+
+</resources>

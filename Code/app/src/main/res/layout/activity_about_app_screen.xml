@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.infokmg.hugv.triagemnutricional.AboutAppScreen"
+android:background="@color/colorBackgroundScreen">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            style="@style/main_cards_styles">
+
+            <TextView
+                android:id="@+id/tv_about_app"
+                style="@style/triage_steps_titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_about_app_title" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/triage_part1_padding">
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/about_app_description_text_styles"
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_about_app" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            style="@style/main_cards_styles">
+
+            <TextView
+                android:id="@+id/tv_about_nrs"
+                style="@style/triage_steps_titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_about_nrs_2002" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/triage_part1_padding">
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/about_app_description_text_styles"
+                    android:gravity=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_about_nrs_2002" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            style="@style/main_cards_styles">
+
+            <TextView
+                android:id="@+id/tv_about_punctuation"
+                style="@style/triage_steps_titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_about_punctuation" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                style="@style/triage_part1_padding">
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/about_app_description_text_styles"
+                    android:gravity=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_about_punctuation" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</FrameLayout>
+
